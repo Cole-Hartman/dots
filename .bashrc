@@ -131,7 +131,7 @@ alias base='cd ~/'
 
 # oh my posh
 # eval "$(oh-my-posh init bash --config ~/.poshthemes/kali.omp.json)"
-eval "$(oh-my-posh init bash --config ~/.poshthemes/catppuccin_mocha.omp.json)"
+eval "$(oh-my-posh init bash --config ~/.customposhthemes/custom_posh.omp.json)"
 
 # Set vim as the default editor
 export VISUAL=nvim
