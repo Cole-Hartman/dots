@@ -127,7 +127,7 @@ export PATH="$HOME/.local/bin:$PATH"
 alias winfiles='cd /mnt/c/Users/coleh/'
 alias neobase='cd ~/.config/nvim'
 alias base='cd ~/'
-alias ls='ls --color=never' # disable highlight dir and files
+# alias ls='ls --color=never' # disable highlight dir and files
 
 # oh my posh
 # eval "$(oh-my-posh init bash --config ~/.poshthemes/kali.omp.json)"
