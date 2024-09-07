@@ -18,6 +18,9 @@ exec --no-startup-id picom --config ~/.config/picom.conf
 # Feh wallpaper
 exec_always --no-startup-id feh --bg-scale ~/Documents/nordicwallpaper.jpg
 
+# Dunst notifications
+exec --no-startup-id dunst
+
 # Load Xresources (for dark theme)
 exec --no-startup-id xrdb -merge ~/.Xresources
 

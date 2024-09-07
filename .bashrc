@@ -125,8 +125,8 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # alias
 # alias winfiles='cd /mnt/c/Users/coleh/'
-alias neobase='cd ~/.config/nvim'
-alias base='cd ~/'
+alias neob='cd ~/.config/nvim'
+alias b='cd ~/'
 alias c='clear'
 alias fonts='cd ~/.local/share/fonts/'
 
