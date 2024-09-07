@@ -128,6 +128,7 @@ export PATH="$HOME/.local/bin:$PATH"
 alias neobase='cd ~/.config/nvim'
 alias base='cd ~/'
 alias c='clear'
+alias fonts='cd ~/.local/share/fonts/'
 
 # oh my posh
 eval "$(oh-my-posh init bash --config ~/.customposhthemes/custom_posh.omp.json)"
