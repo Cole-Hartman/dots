@@ -124,7 +124,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.local/bin:$PATH"
 
 # alias
-alias winfiles='cd /mnt/c/Users/coleh/'
+# alias winfiles='cd /mnt/c/Users/coleh/'
 alias neobase='cd ~/.config/nvim'
 alias base='cd ~/'
 alias c='clear'
