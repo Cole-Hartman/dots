@@ -20,6 +20,15 @@ for_window [class="^.*"] border pixel 0
 new_window 1pixel
 new_float 1pixel
 
+# Picom Transparency
+exec --no-startup-id picom --config ~/.config/picom.conf
+
+# Feh wallpaper
+exec_always --no-startup-id feh --bg-scale ~/Documents/nordicwallpaper.jpg
+
+# Load Xresources (for dark theme)
+exec --no-startup-id xrdb -merge ~/.Xresources
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:monospace 14
@@ -192,8 +201,5 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-        status_command i3status
-}
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
