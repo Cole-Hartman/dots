@@ -124,11 +124,12 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.local/bin:$PATH"
 
 # alias
-# alias winfiles='cd /mnt/c/Users/coleh/'
 alias neob='cd ~/.config/nvim'
 alias b='cd ~/'
 alias c='clear'
 alias fonts='cd ~/.local/share/fonts/'
+alias backup='sudo timeshift-gtk'
+alias wifi='nmtui'
 
 # oh my posh
 eval "$(oh-my-posh init bash --config ~/.customposhthemes/custom_posh.omp.json)"

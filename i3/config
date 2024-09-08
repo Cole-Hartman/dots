@@ -184,3 +184,8 @@ bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
+# Set a 2-pixel border for the focused window only
+# for_window [class="^.*"] border pixel 5
+
+
+
