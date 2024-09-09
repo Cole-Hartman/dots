@@ -130,6 +130,8 @@ alias c='clear'
 alias fonts='cd ~/.local/share/fonts/'
 alias backup='sudo timeshift-gtk'
 alias wifi='nmtui'
+alias wifir='nmcli device wifi rescan'
+alias matrix='cmatrix -C white'
 
 # oh my posh
 eval "$(oh-my-posh init bash --config ~/.customposhthemes/custom_posh.omp.json)"
