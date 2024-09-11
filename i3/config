@@ -11,18 +11,20 @@ gaps outer 12
 for_window [class="^.*"] border pixel 0
 new_window 1pixel
 new_float 1pixel
-
 # Picom Transparency
 exec --no-startup-id picom --config ~/.config/picom.conf
 
 # Feh wallpaper
-exec_always --no-startup-id feh --bg-scale ~/Documents/nordicwallpaper.jpg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/nordicwallpaper.jpg
 
 # Dunst notifications
 exec --no-startup-id dunst
 
 # Load Xresources (for dark theme)
 exec --no-startup-id xrdb -merge ~/.Xresources
+
+# Load nm-applet
+exec --no-startup-id nm-applet
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -161,8 +163,9 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3) AND runs monitor script
+# bindsym $mod+Shift+r restart
+bindsym $mod+Shift+r exec --no-startup-id "~/.config/i3/monitor-setup.sh && i3-msg restart"
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 

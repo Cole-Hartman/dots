@@ -120,18 +120,23 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# CUSTOM SCRIPTS
 export PATH="$HOME/.local/bin:$PATH"
 
-# alias
+# CUSTOM COMMANDS #########
+# Bases / shortcuts
 alias neob='cd ~/.config/nvim'
 alias b='cd ~/'
 alias c='clear'
 alias fonts='cd ~/.local/share/fonts/'
+alias matrix='cmatrix -C white'
+
+# Tools
 alias backup='sudo timeshift-gtk'
 alias wifi='nmtui'
 alias wifir='nmcli device wifi rescan'
-alias matrix='cmatrix -C white'
+alias display='lxappearance'
+
+###############
 
 # oh my posh
 eval "$(oh-my-posh init bash --config ~/.customposhthemes/custom_posh.omp.json)"
