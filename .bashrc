@@ -129,6 +129,7 @@ alias b='cd ~/'
 alias c='clear'
 alias fonts='cd ~/.local/share/fonts/'
 alias matrix='cmatrix -C white'
+alias sleep='systemctl suspend'
 
 # Tools
 alias backup='sudo timeshift-gtk'
