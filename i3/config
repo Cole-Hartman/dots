@@ -11,19 +11,21 @@ gaps outer 12
 for_window [class="^.*"] border pixel 0
 new_window 1pixel
 new_float 1pixel
-# Picom Transparency
+
+# Set a 2-pixel border for the focused window only
+for_window [class="^.*"] border pixel 2
+client.focused #4c7899 #285577 #ffffff #2e9ef4 #285577
+
+# Startup programs
+        # Picom
 exec --no-startup-id picom --config ~/.config/picom.conf
-
-# Feh wallpaper
+        # Feh
 exec_always --no-startup-id feh --bg-scale ~/Pictures/nordicwallpaper.jpg
-
-# Dunst notifications
+        # Dunst
 exec --no-startup-id dunst
-
-# Load Xresources (for dark theme)
+        # Xresources (device dark mode)
 exec --no-startup-id xrdb -merge ~/.Xresources
-
-# Load nm-applet
+        # nm-applet (network manager)
 exec --no-startup-id nm-applet
 
 # Pulse Audio controls
@@ -187,7 +189,5 @@ bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-# Set a 2-pixel border for the focused window only
-for_window [class="^.*"] border pixel 3
-client.focused #4c7899 #285577 #ffffff #2e9ef4 #285577
+
 

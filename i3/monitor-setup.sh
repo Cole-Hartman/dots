@@ -2,7 +2,7 @@
 
 # Setup monitors
 if xrandr | grep "HDMI-2 connected"; then
-    xrandr --output HDMI-2 --mode 1920x1080 --right-of eDP-1
+    xrandr --output HDMI-2 --mode 1920x1080 --rate 119.98 --right-of eDP-1
 else
     xrandr --output HDMI-2 --off
 fi
