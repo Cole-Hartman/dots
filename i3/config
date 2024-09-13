@@ -85,7 +85,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec ~/.config/rofi/launchers/type-3/launcher.sh
+bindsym $mod+d exec ~/.config/rofi/launchers/type-6/launcher.sh
 
 # change window focus
 bindsym $mod+h focus left
