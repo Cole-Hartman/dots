@@ -127,6 +127,7 @@ export PATH="$HOME/.local/bin:$PATH"
 alias neob='cd ~/.config/nvim'
 alias b='cd ~/'
 alias c='clear'
+alias class='cd ~/class'
 alias fonts='cd ~/.local/share/fonts/'
 alias matrix='cmatrix -C white'
 alias sleep='systemctl suspend'
