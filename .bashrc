@@ -131,6 +131,8 @@ alias class='cd ~/class'
 alias fonts='cd ~/.local/share/fonts/'
 alias matrix='cmatrix -C white'
 alias sleep='systemctl suspend'
+alias t='tmux attach -t'
+alias o='./output'
 
 # Tools
 alias backup='sudo timeshift-gtk'
