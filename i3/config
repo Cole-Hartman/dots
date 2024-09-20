@@ -20,7 +20,7 @@ client.focused #4c7899 #285577 #ffffff #2e9ef4 #285577
         # Picom
 exec --no-startup-id picom --config ~/.config/picom.conf
         # Feh
-exec_always --no-startup-id feh --bg-scale ~/Pictures/nordicwallpaper.jpg
+exec_always --no-startup-id feh --bg-scale ~/dotfiles/pictures/nordic-wallpaper.jpg
         # Dunst
 exec --no-startup-id dunst
         # Xresources (device dark mode)
