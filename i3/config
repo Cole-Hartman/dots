@@ -3,6 +3,11 @@
 
 set $mod Mod1
 
+# eDEX-UI configuration
+   bindsym $mod+Shift+b exec ~/.local/bin/edex-ui
+   for_window [class="eDEX-UI"] floating enable
+   for_window [class="eDEX-UI"] fullscreen enable
+
 # Gaps
 gaps inner 10
 gaps outer 12
