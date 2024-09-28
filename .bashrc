@@ -136,6 +136,8 @@ alias matrix='cmatrix -C white'
 alias sleep='systemctl suspend'
 alias t='tmux attach -t'
 alias o='./output'
+alias keyboardoff='xinput float 18'
+alias keyboardon='xinput reattach 18 3'
 
 # Tools
 alias backup='sudo timeshift-gtk'
