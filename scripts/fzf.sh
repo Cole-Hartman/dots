@@ -1,8 +1,12 @@
 #!/bin/bash
 
-# Function to search directories using fzf
+# Function to search specific directories using fzf
 search_directories() {
-    selected_dir=$(find ~/ -type d | fzf --layout=reverse --height 40%)
+    # Define the directories to search
+    directories=(~/code ~/class ~/dotfiles ~/Downloads ~/Desktop)
+    
+    # Use find to search only in specified directories and pipe to fzf
+    selected_dir=$(find "${directories[@]}" -type d 2>/dev/null | fzf --layout=reverse --height 40%)
     
     if [ -n "$selected_dir" ]; then
         cd "$selected_dir"
@@ -12,4 +16,3 @@ search_directories() {
 
 # Run the function
 search_directories
-
