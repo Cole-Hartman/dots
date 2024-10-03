@@ -87,8 +87,8 @@ tiling_drag modifier titlebar
 
 # BINDSYM ############################
 
-# start a terminal
-bindsym Ctrl+Return exec i3-sensible-terminal
+# Open terminal and run fzf bash alias
+bindsym Ctrl+Return exec i3-sensible-terminal -e bash -ic fzfs
 
 # kill focused window
 bindsym $mod+Shift+a kill

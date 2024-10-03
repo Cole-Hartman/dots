@@ -144,6 +144,7 @@ alias backup='sudo timeshift-gtk'
 alias wifi='nmtui'
 alias wifir='nmcli device wifi rescan'
 alias display='lxappearance'
+alias fzfs='~/scripts/fzf.sh'
 
 ###############
 
@@ -168,3 +169,6 @@ bind -m vi-command '"\ew": kill-region'
 bind -m vi-insert '"\C-p": history-search-backward'
 bind -m vi-insert '"\C-n": history-search-forward'
 bind -m vi-insert '"\ew": kill-region'
+
+# fzf
+bind '"\C-f":"fzfs\n"'
