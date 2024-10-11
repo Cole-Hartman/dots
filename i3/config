@@ -48,10 +48,9 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 15%-
 bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86Back exec playerctl previous
+bindsym XF86AudioPlay exec playerctl play-pause
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -87,8 +86,10 @@ tiling_drag modifier titlebar
 
 # BINDSYM ############################
 
-# Open terminal and run fzf bash alias
-bindsym Ctrl+Return exec i3-sensible-terminal -e bash -ic fzfs
+# Open terminal
+bindsym Ctrl+Return exec i3-sensible-terminal 
+# bindsym Ctrl+Return exec i3-sensible-terminal -e bash -ic fzfs
+
 
 # kill focused window
 bindsym $mod+Shift+a kill
