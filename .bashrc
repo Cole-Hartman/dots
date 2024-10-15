@@ -125,6 +125,7 @@ export PATH="$HOME/.local/bin:$PATH"
 # CUSTOM COMMANDS #########
 # Bases / shortcuts
 alias neob='cd ~/.config/nvim'
+alias ..='cd ..'
 alias b='cd ~/'
 alias c='clear'
 alias class='cd ~/class'
