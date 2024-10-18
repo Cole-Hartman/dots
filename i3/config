@@ -87,8 +87,8 @@ tiling_drag modifier titlebar
 # BINDSYM ############################
 
 # Open terminal
-bindsym Ctrl+Return exec i3-sensible-terminal 
-# bindsym Ctrl+Return exec i3-sensible-terminal -e bash -ic fzfs
+set $terminal ~/.local/kitty.app/bin/kitty
+bindsym Ctrl+Return exec $terminal
 
 
 # kill focused window

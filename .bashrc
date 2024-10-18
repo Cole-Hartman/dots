@@ -137,8 +137,8 @@ alias matrix='cmatrix -C white'
 alias sleep='systemctl suspend'
 alias t='tmux attach -t'
 alias o='./output'
-alias keyboardoff='xinput float 18'
-alias keyboardon='xinput reattach 18 3'
+alias keyboardoff='xinput float "AT Translated Set 2 keyboard"'
+alias keyboardon='xinput reattach "AT Translated Set 2 keyboard" "Virtual core keyboard"'
 
 # Tools
 alias backup='sudo timeshift-gtk'
