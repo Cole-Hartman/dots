@@ -136,6 +136,8 @@ alias fonts='cd ~/.local/share/fonts/'
 alias matrix='cmatrix -C white'
 alias sleep='systemctl suspend'
 alias t='tmux attach -t'
+alias z='zellij'
+alias za='zellij attach'
 alias o='./output'
 alias keyboardoff='xinput float "AT Translated Set 2 keyboard"'
 alias keyboardon='xinput reattach "AT Translated Set 2 keyboard" "Virtual core keyboard"'
@@ -173,3 +175,4 @@ bind -m vi-insert '"\ew": kill-region'
 
 # fzf
 bind '"\C-f":"fzfs\n"'
+. "$HOME/.cargo/env"
