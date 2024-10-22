@@ -136,8 +136,9 @@ alias fonts='cd ~/.local/share/fonts/'
 alias matrix='cmatrix -C white'
 alias sleep='systemctl suspend'
 alias t='tmux attach -t'
-alias z='zellij'
 alias za='zellij attach'
+alias zl='zellij list-sessions'
+alias z='zellij -s'
 alias o='./output'
 alias keyboardoff='xinput float "AT Translated Set 2 keyboard"'
 alias keyboardon='xinput reattach "AT Translated Set 2 keyboard" "Virtual core keyboard"'
@@ -172,6 +173,9 @@ bind -m vi-command '"\ew": kill-region'
 bind -m vi-insert '"\C-p": history-search-backward'
 bind -m vi-insert '"\C-n": history-search-forward'
 bind -m vi-insert '"\ew": kill-region'
+
+# fixing ctrl d in zellij
+set -o ignoreeof
 
 # fzf
 bind '"\C-f":"fzfs\n"'
