@@ -123,7 +123,6 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.local/bin:$PATH"
 
 # CUSTOM COMMANDS #########
-# Bases / shortcuts
 alias neob='cd ~/.config/nvim'
 alias ..='cd ..'
 alias b='cd ~/'
@@ -143,7 +142,6 @@ alias o='./output'
 alias keyboardoff='xinput float "AT Translated Set 2 keyboard"'
 alias keyboardon='xinput reattach "AT Translated Set 2 keyboard" "Virtual core keyboard"'
 
-# Tools
 alias backup='sudo timeshift-gtk'
 alias wifi='nmtui'
 alias wifir='nmcli device wifi rescan'
@@ -175,7 +173,7 @@ bind -m vi-insert '"\C-n": history-search-forward'
 bind -m vi-insert '"\ew": kill-region'
 
 # fixing ctrl d in zellij
-set -o ignoreeof
+# set -o ignoreeof
 
 # fzf
 bind '"\C-f":"fzfs\n"'
