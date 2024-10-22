@@ -1,4 +1,4 @@
-| Tool | Description | Usage |
+| Tool | Description | Config / Use |
 |------|-------------|------------------------|
 | i3 | WM | config |
 | I-xappearance | Look and feel, appearance. Themes, icons, fonts. | App |
