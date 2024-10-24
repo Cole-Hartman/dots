@@ -1,0 +1,57 @@
+# /home/cole/.config/tmuxinator/todo.yml
+
+name: todo
+root: ~/todo/
+
+windows:
+  - editor:
+      layout: 3e80,184x43,0,0[184x41,0,0{43x41,0,0,6,48x41,44,0,8,47x41,93,0,9,43x41,141,0,10},184x1,0,42,7]
+      panes:
+        - nvim 1.txt
+        - nvim 2.txt
+        - nvim 3.txt
+        - nvim 4.txt
+        - nvim 5.txt
+
+# Optional tmux socket
+# socket_name: foo
+
+# Note that the pre and post options have been deprecated and will be replaced by
+# project hooks.
+
+# Project hooks
+
+# Runs on project start, always
+# on_project_start: command
+
+# Run on project start, the first time
+# on_project_first_start: command
+
+# Run on project start, after the first time
+# on_project_restart: command
+
+# Run on project exit ( detaching from tmux session )
+# on_project_exit: command
+
+# Run on project stop
+# on_project_stop: command
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux. This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: editor
+
+# Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
+# startup_pane: 1
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+

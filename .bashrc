@@ -173,7 +173,7 @@ bind -m vi-insert '"\C-n": history-search-forward'
 bind -m vi-insert '"\ew": kill-region'
 
 # fixing ctrl d in zellij
-# set -o ignoreeof
+set -o ignoreeof
 
 # fzf
 bind '"\C-f":"fzfs\n"'
