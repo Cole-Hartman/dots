@@ -5,13 +5,17 @@ root: ~/todo/
 
 windows:
   - editor:
-      layout: 3e80,184x43,0,0[184x41,0,0{43x41,0,0,6,48x41,44,0,8,47x41,93,0,9,43x41,141,0,10},184x1,0,42,7]
+      layout: even-horizontal
       panes:
         - nvim 1.txt
         - nvim 2.txt
         - nvim 3.txt
         - nvim 4.txt
-        - nvim 5.txt
+  - split:  
+      layout: even-horizontal
+      panes:
+        - nvim cal1.txt
+        - nvim cal2.txt
 
 # Optional tmux socket
 # socket_name: foo
